@@ -78,6 +78,13 @@ cp .env.example .env
 From the project root:
 
 ```bash
+poetry run python -m src.main
+```
+
+Or activate the environment first and then run:
+
+```bash
+poetry shell
 python -m src.main
 ```
 
