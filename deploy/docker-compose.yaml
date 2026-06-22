@@ -1,0 +1,11 @@
+services:
+
+  app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    volumes:
+      - /app/input/:/input
+      - /app/output/:/output
+    env_file:
+      - ../.env
